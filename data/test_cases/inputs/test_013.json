@@ -1,0 +1,263 @@
+{
+  "race_id": "TEST_013",
+  "race_config": {
+    "track": "Silverstone",
+    "total_laps": 53,
+    "base_lap_time": 93.1,
+    "pit_lane_time": 21.4,
+    "track_temp": 33,
+    "race_id": "TEST_013"
+  },
+  "strategies": {
+    "pos1": {
+      "driver_id": "D001",
+      "starting_tire": "MEDIUM",
+      "pit_stops": [
+        {
+          "lap": 32,
+          "from_tire": "MEDIUM",
+          "to_tire": "HARD"
+        }
+      ]
+    },
+    "pos2": {
+      "driver_id": "D002",
+      "starting_tire": "HARD",
+      "pit_stops": [
+        {
+          "lap": 12,
+          "from_tire": "HARD",
+          "to_tire": "SOFT"
+        },
+        {
+          "lap": 29,
+          "from_tire": "SOFT",
+          "to_tire": "HARD"
+        }
+      ]
+    },
+    "pos3": {
+      "driver_id": "D003",
+      "starting_tire": "HARD",
+      "pit_stops": [
+        {
+          "lap": 11,
+          "from_tire": "HARD",
+          "to_tire": "SOFT"
+        },
+        {
+          "lap": 35,
+          "from_tire": "SOFT",
+          "to_tire": "MEDIUM"
+        }
+      ]
+    },
+    "pos4": {
+      "driver_id": "D004",
+      "starting_tire": "SOFT",
+      "pit_stops": [
+        {
+          "lap": 10,
+          "from_tire": "SOFT",
+          "to_tire": "HARD"
+        }
+      ]
+    },
+    "pos5": {
+      "driver_id": "D005",
+      "starting_tire": "MEDIUM",
+      "pit_stops": [
+        {
+          "lap": 30,
+          "from_tire": "MEDIUM",
+          "to_tire": "HARD"
+        }
+      ]
+    },
+    "pos6": {
+      "driver_id": "D006",
+      "starting_tire": "HARD",
+      "pit_stops": [
+        {
+          "lap": 30,
+          "from_tire": "HARD",
+          "to_tire": "SOFT"
+        }
+      ]
+    },
+    "pos7": {
+      "driver_id": "D007",
+      "starting_tire": "SOFT",
+      "pit_stops": [
+        {
+          "lap": 16,
+          "from_tire": "SOFT",
+          "to_tire": "MEDIUM"
+        }
+      ]
+    },
+    "pos8": {
+      "driver_id": "D008",
+      "starting_tire": "HARD",
+      "pit_stops": [
+        {
+          "lap": 37,
+          "from_tire": "HARD",
+          "to_tire": "MEDIUM"
+        }
+      ]
+    },
+    "pos9": {
+      "driver_id": "D009",
+      "starting_tire": "SOFT",
+      "pit_stops": [
+        {
+          "lap": 10,
+          "from_tire": "SOFT",
+          "to_tire": "HARD"
+        }
+      ]
+    },
+    "pos10": {
+      "driver_id": "D010",
+      "starting_tire": "SOFT",
+      "pit_stops": [
+        {
+          "lap": 12,
+          "from_tire": "SOFT",
+          "to_tire": "HARD"
+        },
+        {
+          "lap": 28,
+          "from_tire": "HARD",
+          "to_tire": "MEDIUM"
+        }
+      ]
+    },
+    "pos11": {
+      "driver_id": "D011",
+      "starting_tire": "HARD",
+      "pit_stops": [
+        {
+          "lap": 45,
+          "from_tire": "HARD",
+          "to_tire": "SOFT"
+        }
+      ]
+    },
+    "pos12": {
+      "driver_id": "D012",
+      "starting_tire": "HARD",
+      "pit_stops": [
+        {
+          "lap": 43,
+          "from_tire": "HARD",
+          "to_tire": "SOFT"
+        }
+      ]
+    },
+    "pos13": {
+      "driver_id": "D013",
+      "starting_tire": "MEDIUM",
+      "pit_stops": [
+        {
+          "lap": 32,
+          "from_tire": "MEDIUM",
+          "to_tire": "HARD"
+        }
+      ]
+    },
+    "pos14": {
+      "driver_id": "D014",
+      "starting_tire": "MEDIUM",
+      "pit_stops": [
+        {
+          "lap": 22,
+          "from_tire": "MEDIUM",
+          "to_tire": "SOFT"
+        }
+      ]
+    },
+    "pos15": {
+      "driver_id": "D015",
+      "starting_tire": "MEDIUM",
+      "pit_stops": [
+        {
+          "lap": 26,
+          "from_tire": "MEDIUM",
+          "to_tire": "HARD"
+        }
+      ]
+    },
+    "pos16": {
+      "driver_id": "D016",
+      "starting_tire": "HARD",
+      "pit_stops": [
+        {
+          "lap": 12,
+          "from_tire": "HARD",
+          "to_tire": "MEDIUM"
+        },
+        {
+          "lap": 41,
+          "from_tire": "MEDIUM",
+          "to_tire": "HARD"
+        }
+      ]
+    },
+    "pos17": {
+      "driver_id": "D017",
+      "starting_tire": "HARD",
+      "pit_stops": [
+        {
+          "lap": 35,
+          "from_tire": "HARD",
+          "to_tire": "MEDIUM"
+        }
+      ]
+    },
+    "pos18": {
+      "driver_id": "D018",
+      "starting_tire": "MEDIUM",
+      "pit_stops": [
+        {
+          "lap": 32,
+          "from_tire": "MEDIUM",
+          "to_tire": "SOFT"
+        }
+      ]
+    },
+    "pos19": {
+      "driver_id": "D019",
+      "starting_tire": "HARD",
+      "pit_stops": [
+        {
+          "lap": 16,
+          "from_tire": "HARD",
+          "to_tire": "MEDIUM"
+        },
+        {
+          "lap": 26,
+          "from_tire": "MEDIUM",
+          "to_tire": "HARD"
+        }
+      ]
+    },
+    "pos20": {
+      "driver_id": "D020",
+      "starting_tire": "HARD",
+      "pit_stops": [
+        {
+          "lap": 10,
+          "from_tire": "HARD",
+          "to_tire": "SOFT"
+        },
+        {
+          "lap": 27,
+          "from_tire": "SOFT",
+          "to_tire": "MEDIUM"
+        }
+      ]
+    }
+  }
+}

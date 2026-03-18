@@ -1,0 +1,38 @@
+# IMPORTANT: Only commit files inside the solution/ directory
+# Everything outside solution/ should not be modified
+
+# Build artifacts (root level only - solution/ has its own .gitignore)
+*.pyc
+__pycache__/
+node_modules/
+*.class
+target/
+*.exe
+
+# Internal generator files
+.difficulty_mapping.json
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Output files
+output.json
+predictions.json
+results/
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# System files
+Thumbs.db
+desktop.ini

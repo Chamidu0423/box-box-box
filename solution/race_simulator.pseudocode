@@ -1,0 +1,133 @@
+/*
+ * Box Box Box - F1 Race Simulator
+ * Language-Agnostic Input/Output Specification
+ *
+ * This file demonstrates the expected input and output format.
+ * The implementation approach is entirely up to you.
+ */
+
+// ============================================================================
+// INPUT SPECIFICATION
+// ============================================================================
+
+/*
+ * Your program receives a JSON object via STDIN:
+ *
+ * {
+ *   "race_id": "TEST_001",
+ *   "race_config": {
+ *     "track": "Monza",
+ *     "total_laps": 53,
+ *     "base_lap_time": 82.5,
+ *     "pit_lane_time": 22.0,
+ *     "track_temp": 32
+ *   },
+ *   "strategies": {
+ *     "pos1": {
+ *       "driver_id": "D001",
+ *       "starting_tire": "SOFT",
+ *       "pit_stops": [
+ *         {"lap": 18, "from_tire": "SOFT", "to_tire": "MEDIUM"}
+ *       ]
+ *     },
+ *     "pos2": {
+ *       "driver_id": "D002",
+ *       "starting_tire": "MEDIUM",
+ *       "pit_stops": [
+ *         {"lap": 26, "from_tire": "MEDIUM", "to_tire": "HARD"}
+ *       ]
+ *     }
+ *     // ... pos3 through pos20 (20 drivers total)
+ *   }
+ * }
+ */
+
+// ============================================================================
+// OUTPUT SPECIFICATION
+// ============================================================================
+
+/*
+ * Your program must output a JSON object to STDOUT:
+ *
+ * {
+ *   "race_id": "TEST_001",
+ *   "finishing_positions": [
+ *     "D007", "D015", "D003", "D012", "D008",
+ *     "D001", "D011", "D019", "D005", "D014",
+ *     "D020", "D004", "D009", "D018", "D006",
+ *     "D013", "D017", "D010", "D016", "D002"
+ *   ]
+ * }
+ *
+ * The finishing_positions array must contain exactly 20 driver IDs,
+ * ordered from 1st place to 20th place.
+ */
+
+// ============================================================================
+// HIGH-LEVEL APPROACH
+// ============================================================================
+
+/*
+ * Your task is to predict the finishing positions by simulating the race.
+ *
+ * Steps to consider:
+ * 1. Read and parse the JSON input from STDIN
+ * 2. Simulate the race to determine finishing order
+ * 3. Output the results as JSON to STDOUT
+ *
+ * Your challenge is to discover how to accurately simulate the race by
+ * analyzing the 30,000 historical races provided in data/historical_races/
+ *
+ * Key questions to answer through data analysis:
+ * - How do different tire compounds affect performance?
+ * - How do tires behave as they age?
+ * - What role does track temperature play?
+ * - How should pit stops be factored into the simulation?
+ *
+ * See PROBLEM_STATEMENT.md and docs/regulations.md for more details.
+ */
+
+// ============================================================================
+// IMPLEMENTATION
+// ============================================================================
+
+FUNCTION main():
+    // Read input from STDIN
+    input_json = READ_FROM_STDIN()
+    test_case = PARSE_JSON(input_json)
+
+    // TODO: Implement your race simulation logic here
+    // Analyze historical data to understand the race mechanics
+    // Build a model that predicts finishing positions
+
+    finishing_positions = YOUR_SIMULATION_LOGIC(test_case)
+
+    // Prepare output
+    output = {
+        race_id: test_case.race_id,
+        finishing_positions: finishing_positions
+    }
+
+    // Write output to STDOUT
+    output_json = TO_JSON(output)
+    WRITE_TO_STDOUT(output_json)
+END FUNCTION
+
+EXECUTE main()
+
+// ============================================================================
+// TESTING
+// ============================================================================
+
+/*
+ * Test your implementation:
+ *
+ * Single test case:
+ *   cat data/test_cases/inputs/test_001.json | your_program
+ *
+ * All test cases:
+ *   ./test_runner.sh
+ *
+ * The test runner will automatically read your command from
+ * solution/run_command.txt and test your solution against all 100 test cases.
+ */
