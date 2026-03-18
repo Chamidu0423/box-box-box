@@ -1,7 +1,4 @@
 # Box Box Box 🏁
-## F1 Pit Strategy Optimization Challenge
-
-> *"Box, Box, Box"* - F1 radio call for pitting
 
 ---
 
