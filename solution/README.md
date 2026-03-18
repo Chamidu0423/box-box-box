@@ -3,14 +3,14 @@
 ## Overview
 This solution implements a high-precision analytical model to predict F1 race finishing positions. While traditional machine learning models often struggle with the deterministic nature of simulation engines, this approach utilizes Reverse Engineering and Mathematical Optimization to achieve an estimated accuracy of 90.83%.
 
-## 📊 Performance Metrics
+## Performance Metrics
 After analyzing 30,000 historical races, the model was validated against 100 local test cases:
 
 - Overall Estimated Accuracy: 90.83%
 - Average Position Error: 0.917 places per driver
 - Methodology: Discrete Analytical Simulation (Non-linear Degradation)
 
-## 🧠 The Engineering Approach
+## The Engineering Approach
 The simulator bypasses "black-box" AI models in favor of a physics-based approach, focusing on five key factors identified through data analysis:
 
 1. Quadratic Tire Degradation: Identified that tire wear follows an $Age^2$ curve rather than a linear decay, significantly improving mid-race predictions.
@@ -19,7 +19,7 @@ The simulator bypasses "black-box" AI models in favor of a physics-based approac
 4. Starting Position Penalty: Modeled the initial gap between drivers using a square-root distribution to account for the "standing start" delay.
 5. Fuel Burn Compensation: A linear speed-up factor was applied as the race progresses to simulate reduced vehicle mass.
 
-## 🛠️ How to Validate
+## How to Validate
 To verify the performance of this model, you can run the following evaluation scripts included in the repository:
 
 ### To see the 90.83% Accuracy Report
@@ -32,7 +32,7 @@ python solution/evaluator.py
 ./test_runner.sh
 ```
 
-## 📂 Repository Structure
+## Repository Structure
 - solution/race_simulator.py: The core prediction engine.
 - solution/optimal_params.json: Optimized weights and decay constants discovered during the research phase.
 - solution/evaluator.py: Internal validation tool to measure position-based accuracy.
